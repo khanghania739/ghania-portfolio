@@ -1,0 +1,517 @@
+
+html {
+  scroll-behavior: smooth;
+}
+/* ================================
+   BASE
+================================ */
+body {
+  background-color: #030712;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container p {
+  background: linear-gradient(90deg, #fa0680 0%, #8a3dd6 50%, #e81b82 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px;
+  font-size: 25px;
+}
+.nav-container ul {
+  display: flex;
+  gap: 25px;
+  padding: 5px;
+  margin: 20px;
+  font-size: 20px;
+}
+.nav-container li {
+  list-style: none;
+}
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ================================
+   HERO
+================================ */
+.hero-container {
+  background-color: #030712;
+  margin: 20px;
+  border: 2px solid #030712;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  text-align: center;
+}
+.greeting {
+  color: #a855f7;
+}
+.main-name {
+  color: #ffffff;
+}
+.title-gradient {
+  background: linear-gradient(90deg, #fa0680 0%, #8a3dd6 50%, #e81b82 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.subtitle {
+  color: #38bdf8;
+}
+.hero-btn {
+  margin: 20px;
+}
+.download,
+.view-project {
+  width: 15%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.download {
+  background: linear-gradient(90deg, #9d2eff 0%, #d63dbc 50%, #e81b82 100%);
+  border: none;
+  color: white;
+}
+.view-project {
+  border: 2px solid #d63dbc;
+  background-color: #030712;
+  color: white;
+}
+.icons {
+  margin: 20px;
+}
+.icons i {
+  color: white;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* ================================
+   ABOUT
+================================ */
+hr {
+  background-color: rgb(147, 16, 38);
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 30px;
+  border: 2px solid #030712;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+}
+.about-card1 {
+  margin: 20px;
+  margin-left: 70px;
+}
+.about-card2 {
+  flex: 1;
+  min-width: 0;  /* prevents flex overflow */
+}
+.detailed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  align-items: center;
+  margin: 40px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #030815;
+}
+.info {
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+}
+.info div {
+  min-width: 0;
+  overflow: hidden;
+}
+.info p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.info i {
+  border: 2px solid #1c2541;
+  margin: 19px;
+  padding: 19px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #5b86e5 0%, #8a5cf6 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex-shrink: 0;  /* icon never shrinks */
+}
+.about-text1,
+.about-card1 h4,
+.info-text {
+  background: linear-gradient(90deg, #ef2d8e 0%, #590fa3 50%, #e81b82 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+}
+li::marker {
+  color: #fa0680;
+}
+
+/* ================================
+   SKILLS
+================================ */
+.skill-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  margin: 20px;
+  border: 2px solid #030712;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  gap: 20px;
+}
+.skill-card {
+  display: flex;           /* changed from grid to flex */
+  flex-direction: column;
+  gap: 25px;
+  height: auto;
+  width: 600px;
+  padding: 50px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.text1 {
+  text-align: center;
+  background: linear-gradient(90deg, #ef2d8e 0%, #590fa3 50%, #e81b82 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 21px;
+  font-weight: bold;
+}
+.text2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.skill-info {
+  display: grid;
+  grid-template-columns: 50px 150px 1fr 80px;  /* 1fr instead of fixed 200px */
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.skill-info img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.progressbar {
+  width: 100%;
+  min-width: 0;            /* critical for grid */
+  height: 10px;
+  background-color: #1e1b2e;   /* fixed: was white, invisible on dark bg */
+  border: 1px solid #3b2d6e;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #9d2eff 0%, #d63dbc 100%);  /* gradient fill */
+  border-radius: 20px;
+  display: block;
+}
+
+/* Progress Widths */
+.html  { width: 85%; }
+.css   { width: 60%; }
+.js    { width: 60%; }
+.mysql { width: 50%; }
+.java  { width: 70%; }
+
+.skill-name {
+  background: linear-gradient(90deg, #ef2d8e 0%, #590fa3 50%, #e81b82 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  font-size: 25px;
+}
+.skill-currently {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: auto;
+  width: 600px;
+  padding: 50px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.skill-currently i {
+  color: white;
+}
+.skill-currently h3 {
+  background: linear-gradient(90deg, #ef2d8e 0%, #590fa3 50%, #e81b82 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* ================================
+   PROJECTS
+================================ */
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 25px;
+  margin: 20px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+}
+.project-card {
+  height: 150px;
+  width: 150px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ================================
+   LEARNING JOURNEY
+================================ */
+.learner-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 25px;
+  margin: 20px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+}
+.learn-card {
+  height: auto;
+  min-height: 200px;
+  width: 300px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+}
+.learn-card p {
+  text-align: center;
+}
+
+/* ================================
+   TECH STACK
+================================ */
+.tech-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 25px;
+  margin: 20px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  text-align: center;
+}
+.tech-card {
+  height: 150px;
+  width: 150px;
+  border: solid 2px #030815;
+  box-shadow: 0 0 20px #031238;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer p {
+  text-align: center;
+}
+
+/* ================================
+   RESPONSIVE — max-width: 768px
+================================ */
+@media (max-width: 768px) {
+
+  /* ── Navbar ── */
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-container ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ── Hero ── */
+  .hero-text {
+    text-align: center;
+  }
+  .hero-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .download,
+  .view-project {
+    width: 70%;
+  }
+  .download {
+    margin-bottom: 10px;
+  }
+
+  /* ── About ── */
+  .about-container {
+    flex-direction: column;
+  }
+  .about-card1 {
+    margin-left: 20px;
+  }
+  .about-card2 {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .detailed {
+    grid-template-columns: 1fr;
+    margin: 15px;
+    padding: 15px;
+  }
+  .info p,
+  .info-text {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  /* ── Skills ── */
+  .skill-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  /* KEY FIX: card stops overflowing */
+  .skill-card,
+  .skill-currently {
+    width: 90%;
+    height: auto;          /* remove fixed 400px */
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+
+  /* KEY FIX: progress bar 2-row layout */
+  .skill-info {
+    display: grid;
+    grid-template-columns: 35px 1fr 45px;  /* icon | name | percent */
+    grid-template-rows: auto auto;          /* row1: icon+name+% | row2: bar */
+    gap: 5px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .skill-info img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 28px;
+    height: 28px;
+  }
+  .skill-info span:first-of-type {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 13px;
+  }
+  .skill-info span:last-of-type {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right;
+    font-size: 13px;
+  }
+  .progressbar {
+    grid-column: 1 / -1;  /* span all 3 columns */
+    grid-row: 2;
+    width: 100%;
+    min-width: 0;
+    height: 8px;
+    background-color: #1e1b2e;
+    border: 1px solid #3b2d6e;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .progress {
+    height: 100%;
+    background: linear-gradient(90deg, #9d2eff 0%, #d63dbc 100%);
+    border-radius: 20px;
+    display: block;
+  }
+
+  /* ── Projects ── */
+  .project-cards {
+    flex-wrap: wrap;
+  }
+  .project-card {
+    width: 130px;
+    height: 130px;
+  }
+
+  /* ── Learning Journey ── */
+  .learner-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .learn-card {
+    width: 85%;
+    height: auto;
+  }
+
+  /* ── Tech Stack ── */
+  .tech-cards {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .tech-card {
+    width: 120px;
+    height: auto;
+    box-sizing: border-box;
+  }
+}
