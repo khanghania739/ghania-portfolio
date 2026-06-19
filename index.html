@@ -40,17 +40,18 @@
             <div class="hero-btn">
                 <button class="download">
                     <i class="fa-solid fa-download"></i>
-                    Download CV
+                    <a href="./assets/CV .pdf">Download CV</a>
                 </button>
                 <button class="view-project">
                     <i class="fa-solid fa-folder"></i>
-                    View Project
+                    <a href="#project">View Project</a>
+                    
                 </button>
             </div>
             <div class="icons">
                 <a href="https://www.linkedin.com/in/ghania-khan-74b341325/"> <i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/khanghania739"> <i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
@@ -231,23 +232,23 @@
         <div class="techs">
             <div class="tech-cards">
                 <div class="tech-card">
-                    <img src="./html.png" alt="">
+                    <img src="./Images/html.png" alt="">
                     <p>HTML</p>
                 </div>
                 <div class="tech-card">
-                    <img src="./css.png" alt="">
+                    <img src="./Images/css.png" alt="">
                     <p>CSS</p>
                 </div>
                 <div class="tech-card">
-                    <img src="./javascript.png" alt="">
+                    <img src="./Images/javascript.png" alt="">
                     <p>JavaScript</p>
                 </div>
                 <div class="tech-card">
-                    <img src="./mysql.png" alt="">
+                    <img src="./Images/mysql.png" alt="">
                     <p>MY SQL</p>
                 </div>
                 <div class="tech-card">
-                    <img src="./java.png" alt="">
+                    <img src="./Images/java.png" alt="">
                     <p>Java</p>
                 </div>
             </div>
@@ -256,6 +257,12 @@
     <footer>
         <p>© 2026 Ghania Khan. All Right Reserved</p>
     </footer>
+
+    <script>
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    window.open("assets/Ghania_Khan_CV.pdf", "_blank");
+});
+</script>
 </body>
 
 </html>

@@ -83,6 +83,11 @@ body {
   cursor: pointer;
   font-size: 15px;
 }
+.download a,
+.view-project a{
+  text-decoration: none;
+  color: white;
+}
 .download {
   background: linear-gradient(90deg, #9d2eff 0%, #d63dbc 50%, #e81b82 100%);
   border: none;
